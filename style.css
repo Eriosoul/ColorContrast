@@ -1,0 +1,266 @@
+/* Reseteo general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo general del body */
+body {
+    max-width: 1250px;
+    margin: auto;
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    background-color: #f3f3f3;
+    justify-items: center;
+    align-items: start;
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Encabezado principal */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    padding: 15px 20px;
+    color: black;
+    font-size: 24px;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+header div:first-child {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header img {
+    height: 32px;
+    width: auto;
+}
+
+header div:last-child a img {
+    height: 28px;
+    width: auto;
+    cursor: pointer;
+}
+
+/* Cabecera secundaria */
+.cabecera {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 100%;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cabecera > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.cabecera > div > div:first-child {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+/* Contenedor de modificación de color */
+.modificacion_color_text {
+    display: grid;
+    grid-template-columns: 45% 6% 45%;
+    gap: 20px;
+    margin: 20px 0;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+}
+
+.color_fondo, .color_texto {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+}
+
+.box {
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+}
+
+form {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+form input {
+    width: 70%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+form button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+button img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Sección de la cuadrícula */
+.grid-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    width: 100%;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+}
+
+/*
+.grid-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    background: #f7f7f7;
+}*/
+
+.card {
+    background: #1e1e1e;
+    color: white;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.card-avatar img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 2px solid #fff;
+    object-fit: contain;
+}
+
+.card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.card .stats {
+    display: flex;
+    justify-content: space-around;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.card button {
+    background: #4a4a4a;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.card button:hover {
+    background: #ffffff;
+    color: #4a4a4a;
+}
+
+/* Gráfica */
+.chart-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 40px auto;
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+/* Estilo para la gráfica */
+.chart {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.bar {
+    height: 30px;
+    background-color: #4CAF50;  /* Color verde */
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.bar:nth-child(odd) {
+    background-color: #2196F3;  /* Color azul para barras impares */
+}
+
+.bar:nth-child(even) {
+    background-color: #f44336;  /* Color rojo para barras pares */
+}
+
+
+.photo_ img {
+    width: 260px;
+    border-radius: 8px; /* O cualquier otro estilo que desees */
+    object-fit: cover; /* Asegura que la imagen mantenga una buena proporción */
+}
