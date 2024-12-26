@@ -22,7 +22,7 @@ dataset = [
         "Background_Color": generate_color(),
         "Text_Color": generate_color()
     }
-    for _ in range(100000)
+    for _ in range(1000000)
 ]
 
 # Agregar el cálculo de contraste a cada combinación

@@ -264,3 +264,10 @@ button img {
     border-radius: 8px; /* O cualquier otro estilo que desees */
     object-fit: cover; /* Asegura que la imagen mantenga una buena proporción */
 }
+
+button {
+    background: none; /* Mantenemos el estilo actual */
+    border: none;
+    cursor: pointer; /* Ya estaba definido, pero se asegura */
+    padding: 5px;
+}
